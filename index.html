@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humedal El Burro - Bogotá</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef7ea;
+        }
+        header {
+            background-color: #2d6a4f;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+        }
+        .section-container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #2d6a4f;
+            margin-top: 0;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .gallery img {
+            width: 30%;
+            max-width: 200px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        .video-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        iframe {
+            width: 100%;
+            height: 315px;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #2d6a4f;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #2d6a4f;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 20px;
+            display: none;
+        }
+        .back-to-top:hover {
+            background-color: #1b4332;
+        }
+        .map-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 300px;
+            border: 0;
+            border-radius: 10px;
+        }
+        .contact-form {
+            margin-top: 20px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background-color: #2d6a4f;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #1b4332;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        🌿 Humedal El Burro - Bogotá 🌿
+    </header>
+
+    <!-- Contenedor de Historia -->
+    <div class="section-container">
+        <h2>📜 Historia</h2>
+        <p>El Humedal El Burro está ubicado en la localidad de Kennedy, en Bogotá. Históricamente, formó parte del sistema de humedales asociados al río Bogotá y al río Fucha. Durante décadas sufrió deterioro debido a la urbanización y contaminación, pero esfuerzos comunitarios y gubernamentales han permitido su recuperación.</p>
+        <p>Desde el siglo pasado, este humedal ha sido clave en el ecosistema de la sabana de Bogotá. Sin embargo, la expansión urbana ha reducido su extensión. Actualmente, es un área protegida donde se realizan actividades de educación ambiental y restauración ecológica.</p>
+    </div>
+
+    <!-- Contenedor de Importancia Ecológica -->
+    <div class="section-container">
+        <h2>🌎 Importancia Ecológica</h2>
+        <ul>
+            <li>Regulación hídrica: Previene inundaciones y mantiene el equilibrio del ecosistema.</li>
+            <li>Purificación del agua: Filtra contaminantes y mejora la calidad del agua.</li>
+            <li>Hábitat de biodiversidad: Refugio para diversas especies de flora y fauna.</li>
+            <li>Contribución a la mitigación del cambio climático mediante la captura de carbono.</li>
+        </ul>
+    </div>
+
+    <!-- Contenedor de Flora y Fauna -->
+    <div class="section-container">
+        <h2>🦜 Flora y Fauna</h2>
+        <h3>Flora</h3>
+        <ul>
+            <li>Praderas emergentes herbáceas</li>
+            <li>Vegetación flotante como la lenteja de agua</li>
+            <li>Juncos y totoras que ayudan a la filtración del agua</li>
+        </ul>
+        <h3>Fauna</h3>
+        <p>El humedal es hogar de diversas especies de aves, anfibios e insectos que contribuyen al equilibrio del ecosistema.</p>
+        <div class="gallery">
+            <img src="https://inaturalist-open-data.s3.amazonaws.com/photos/6178795/large.jpg" alt="Tingua de Pico Rojo">
+            <img src="https://seo.org/wp-content/uploads/2013/11/F116_Foto_01.jpg" alt="Garza Real">
+            <img src="https://cloudfront-us-east-1.images.arcpublishing.com/semana/6VZOHO32IVHQTGBKPM5AV7QN7E.jpg" alt="Rana de la Sabana">
+            <img src="https://cloudfront-us-east-1.images.arcpublishing.com/elheraldoco/ERLULP75SRANJE2WSQRBAXNDD4.jpg" alt="Cóndor de los Andes">
+            <img src="https://inaturalist-open-data.s3.amazonaws.com/photos/9868930/large.jpg" alt="Puercoespín arborícola">
+        </div>
+    </div>
+
+    <!-- Contenedor de Video Informativo -->
+    <div class="section-container">
+        <h2>🎥 Video Informativo</h2>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/DchlC_kzIbs?si=7Zov-Nm394d2sWoW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Contenedor de Actividades y Conservación -->
+    <div class="section-container">
+        <h2>🌿 Actividades y Conservación</h2>
+        <p>El Humedal El Burro es un espacio donde se llevan a cabo actividades educativas y recreativas:</p>
+        <ul>
+            <li>Avistamiento de aves</li>
+            <li>Jornadas de reforestación</li>
+            <li>Charlas sobre educación ambiental</li>
+            <li>Caminatas ecológicas guiadas</li>
+        </ul>
+        <p>Las autoridades locales y organizaciones ambientales trabajan en conjunto para proteger este ecosistema, promoviendo su conservación y evitando la contaminación.</p>
+    </div>
+
+    <!-- Contenedor del Mapa -->
+    <div class="section-container">
+        <h2>🗺️ Mapa del Humedal</h2>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.785634464678!2d-74.147888685237!3d4.628428996634038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9c8b8b8b8b8b%3A0x8b8b8b8b8b8b8b8b!2sHumedal%20El%20Burro%2C%20Bogotá!5e0!3m2!1ses!2sco!4v1629999999999!5m2!1ses!2sco" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+    <!-- Contenedor de Contacto -->
+    <div class="section-container">
+        <h2>📧 Contacto</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Correo electrónico" required>
+            <textarea placeholder="Mensaje" rows="5" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <footer>
+        🌎 Conozcamos y protejamos nuestros humedales 🌱
+    </footer>
+
+    <!-- Botón para subir al inicio -->
+    <a href="#" class="back-to-top" id="back-to-top">↑</a>
+
+    <script>
+        // Función para mostrar/ocultar el botón de subir
+        window.onscroll = function() {
+            var backToTopButton = document.getElementById('back-to-top');
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        };
+
+        // Función para subir al inicio de la página
+        document.getElementById('back-to-top').onclick = function() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        };
+    </script>
+</body>
+</html>
